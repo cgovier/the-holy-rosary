@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<!--- HEADER -->
+<head>
+<title>Mysteries of the Rosary</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/74506de931.js"></script>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="mysteries-of-the-rosary.html">Mysteries of the Rosary</a></li>
+    <li><a href="our-rationale.html">Our Rationale</a></li>
+    <li><a href="#">Objective</a></li>
+    <li><a href="#">Standards</a></li>
+  </ul>
+  <span class="close"><i class="fa fa-close"></i></span> </div>
+
+<!-- Toggle Button -->
+<button class="toggle-btn"><i class="fa fa-bars"></i></button>
+<!--- / END HEADER --> 
+
+<!-- Main Content -->
+<h1>Mysteries of the Rosary</h1>
+<div id="rosary-container"> <img src="img/Mysteries of the Rosary.jpg" onclick="playAudio()" alt="">
+  <div id="audio-container">
+    <audio controls class="audio-mystery">
+      <source src="audio/Joyful Mysteries Annunciation Helena.mp3" type="audio/mpeg">
+      Your browser does not support the audio element. </audio>
+    <audio controls class="audio-mystery">
+      <source src="audio/Joyful Mysteries the Visitation Gui Kim.mp3" type="audio/mpeg">
+      Your browser does not support the audio element. </audio>
+    <audio controls class="audio-mystery">
+      <source src="audio/Joyful Mysteries the Nativity.mp3" type="audio/mpeg">
+      Your browser does not support the audio element. </audio>
+  </div>
+  <img src="img/Mysteries of the Rosary (1).jpg" onclick="playAudio()" alt=""> <img src="img/Mysteries of the Rosary (2).jpg" onclick="playAudio()" alt=""> <img src="img/Mysteries of the Rosary (3).jpg" onclick="playAudio()" alt=""> <img src="img/Mysteries of the Rosary (4).jpg" onclick="playAudio()" alt=""> <img src="img/Mysteries of the Rosary (5).jpg" onclick="playAudio()" alt=""> <img src="img/Mysteries of the Rosary (6).jpg" onclick="playAudio()" alt=""> <img src="img/Mysteries of the Rosary (7).jpg" onclick="playAudio()" alt=""> 
+  <!-- IFRAME <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTUCuiwh1cEj8w9cf6SBAa2ThHHCWmsh4EhlcMN3Ac4jbIU3LMzYtKEAs2ypyqaa-4frqj0fxr-ltJS/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> --> 
+</div>
+<div id="audio">
+  <audio controls id="full-rosary">
+    <source src="full-rosary.mp3" type="audio/mpeg">
+    Your browser does not support the audio element. </audio>
+</div>
+<script>
+      function playAudio() {
+        var audio = document.getElementById("full-rosary");
+        audio.play();
+      }
+    </script> 
+<!--- FOOTER -->
+<footer>footer</footer>
+<script>
+      const navbar = document.querySelector('.navbar');
+      const toggleBtn = document.querySelector('.toggle-btn');
+      const closeBtn = document.querySelector('.close');
+
+      toggleBtn.addEventListener('click', () => {
+        navbar.classList.add('show');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        navbar.classList.remove('show');
+      });
+</script> 
+<!--- END FOOTER -->
+</body>
+</html>
