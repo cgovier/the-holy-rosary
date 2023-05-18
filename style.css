@@ -18,7 +18,7 @@ body {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #333;
+  background-color: #B5B5B5;
   padding: 40px 0;
   transition: all 0.3s ease-in-out;
 }
@@ -65,11 +65,15 @@ body {
   background-color: #F3F3F3;
   border-radius: 5px;
 }
+a {
+  color: rgba(0, 104, 91, 1) !important;
+}
 /* Main Content */
 h1 {
   text-align: center;
   margin-top: 80px;
   font-size: 48px;
+  color: rgba(0, 104, 91, 1);
 }
 #rosary-container {
   max-width: 80%;
@@ -116,6 +120,42 @@ a:hover {
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+/* Mobile-first styles for h1 and p */
+h1 {
+  font-size: 4rem;
+  padding: 1%;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 4%;
+}
+footer {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px;
+  color: #626262;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* Media query for screens 768px and above */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    padding: 10% 15%;
+  }
+  p {
+    font-size: 1.5rem;
+    padding: 6%;
+  }
 }
 /* Responsive Styles */
 @media (max-width: 767px) {

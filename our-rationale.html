@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html>
+<!--- HEADER -->
 <head>
 <title>The Holy Rosary Website</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 <!-- Google Fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-<!-- Link your CSS file here -->
 <script src="https://use.fontawesome.com/74506de931.js"></script>
 </head>
 <body>
 <!-- Navigation Bar -->
 <div class="navbar">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#mysteries-of-the-rosary">Mysteries of the Rosary</a></li>
-    <li><a href="#">Our Reason</a></li>
-    <li><a href="#">Objective</a></li>
-    <li><a href="#">Standards</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="mysteries-of-the-rosary.html">Mysteries of the Rosary</a></li>
+    <li><a href="our-rationale.html">Our Rationale</a></li>
+    <li><a href="objective.html">Objective</a></li>
+    <li><a href="standards.html">Standards</a></li>
   </ul>
   <span class="close"><i class="fa fa-close"></i></span> </div>
 
 <!-- Toggle Button -->
 <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+<!--- / END HEADER -->
 
 <!-- Main Content -->
 <h1>Our Rationale</h1>
-<div id="rosary-container">
+<p id="rationale" class="container">
 In times when the distance between the human being and God has become more significant, we understand that praying is a way to regain touch with the divine and recover the feeling of holy to which all of us are entitled.
 Human beings are sacred, and therefore our means to develop a life that is not apart from holiness but is immersed in it is by relating ourselves to God, the Holy Trinity.
 As St. Pope John Paul II said, the Rosary, as devotion in honor of the Blessed Virgin Mary, is at the center of Christian spirituality and is "among the finest and most praiseworthy traditions of Christian contemplation.”
 The meaning of the word Rosary comes from Latin and means a garland of roses; the rose is one of the flowers used to symbolize the Virgin Mary, and as the prayers are recited, the Rosary brings to mind the sweet fragrance not only of the Mother of God but of Christ himself.
 Each student was given a piece of wood during Art classes representing the Hail Mary or the Our Father. They created patterns and designs using acrylic paint to symbolize spirituality. When students finished their pieces, the Rosary was assembled and displayed on a panel in the Elementary School hallway. 
 Students recorded the prayers and learned how to include them on a website to make this project interactive. The Learning Innovation curriculum component is multimedia and communication skills.
-</div>
+</p>
+	<!--- FOOTER -->
+<footer>
+	<br><br><hr><br>
+	An Interdiscplinary Project between Religion, Art and Learning Innovation at Chapel School in São Paulo Brazil<br>
+	Directed by Ana Lucia Dias<br>Recited and performed by 4th Grade <br>Website designed by Otavio Garcia made and Developed by Christopher Govier<br></footer>
+
 <script>
       const navbar = document.querySelector('.navbar');
       const toggleBtn = document.querySelector('.toggle-btn');
@@ -47,7 +54,7 @@ Students recorded the prayers and learned how to include them on a website to ma
       closeBtn.addEventListener('click', () => {
         navbar.classList.remove('show');
       });
-   
 </script>
+	<!--- END FOOTER -->
 </body>
 </html>

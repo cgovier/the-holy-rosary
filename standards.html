@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<!--- HEADER -->
+<head>
+<title>The Holy Rosary Website</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/74506de931.js"></script>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="mysteries-of-the-rosary.html">Mysteries of the Rosary</a></li>
+    <li><a href="our-rationale.html">Our Rationale</a></li>
+    <li><a href="#">Objective</a></li>
+    <li><a href="standards.html">Standards</a></li>
+  </ul>
+  <span class="close"><i class="fa fa-close"></i></span> </div>
+
+<!-- Toggle Button -->
+<button class="toggle-btn"><i class="fa fa-bars"></i></button>
+<!--- / END HEADER -->
+
+<!-- Main Content -->
+<h1>Standards</h1>
+<p id="rationale" class="container">
+	<strong>Religion</strong>
+<br><br>
+1 - Christian Prayer - Prayer is an essential way we respond to God, who loved us first. Prayer is necessary if we are to know God personally and to do His will. Catholic school students will understand the revelation and tradition of the Catholic life of prayer.
+<br>
+N. Understand what prayer is and the revelation of prayer. (CCC 2559 – 2649)
+<br>
+1. Explain that prayer connects us with Trinity as one and separately as Father, Son, and Holy Spirit. (CCC 2565)
+<br>
+2. Recognize Jesus as a model of prayer. (CCC 2609, 2613, 2621)
+<br>
+O. Understand the Catholic Christian tradition of prayer (CCC 2650 – 2696)
+<br>
+2. Compare Mary's experience with Jesus to your experience with Jesus through the mysteries of the rosary. (CCC 2708)
+<br>
+P. Understand and experience the Catholic Christian life of prayer (CCC 2697 – 2758)
+<br>
+1. Recite the Rosary 
+<br>
+<br>
+<strong>Art</strong>
+<br><br>
+
+Elements of Art: Color, Line, Shape, patterns and designs.
+<br>
+Creative Expression
+<br>
+Students apply artistic processes and skills, using a variety of media to communicate meaning and intent in original works of art.
+<br>
+<br>
+<strong>Learning Innovation</strong>
+<br><br>
+ISTE Students
+<br>
+1.6 Creative Communicator
+<br>
+Students communicate clearly and express themselves creatively for a variety of purposes using the platforms, tools, styles, formats and digital media appropriate to their goals. 
+<br>
+1.6.a. choose the appropriate platforms and tools for meeting the desired objectives of their creation or communication.
+<br>
+1.6.d. publish or present content that customizes the message and medium for their intended audience
+<br>
+
+1.7 Global Collaborator
+<br>
+Students use digital tools to broaden their perspectives and enrich their learning by collaborating with others and working effectively in teams locally and globally.
+<br>
+1.7.a. use digital tools to connect with learners from a variety of backgrounds and cultures, engaging with them in ways that broaden mutual understanding and learning.
+</p>
+	<!--- FOOTER -->
+<footer>
+	<br><br><hr><br>
+	An Interdiscplinary Project between Religion, Art and Learning Innovation at Chapel School in São Paulo Brazil<br>
+	Directed by Ana Lucia Dias<br>Recited and performed by 4th Grade <br>Website designed by Otavio Garcia made and Developed by Christopher Govier<br></footer>
+<script>
+      const navbar = document.querySelector('.navbar');
+      const toggleBtn = document.querySelector('.toggle-btn');
+      const closeBtn = document.querySelector('.close');
+
+      toggleBtn.addEventListener('click', () => {
+        navbar.classList.add('show');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        navbar.classList.remove('show');
+      });
+</script>
+	<!--- END FOOTER -->
+</body>
+</html>
