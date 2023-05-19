@@ -24,17 +24,17 @@
 
 <!-- Toggle Button -->
 <button class="toggle-btn"><i class="fa fa-bars"></i></button>
-<!--- / END HEADER -->
+<!--- / END HEADER --> 
 
 <!-- Main Content -->
 <h1>The Holy Rosary</h1>
-<div id="rosary-container">
-	<img src="img/rosary.jpg" alt="" onclick="playAudio()">
-  <!-- IFRAME <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTUCuiwh1cEj8w9cf6SBAa2ThHHCWmsh4EhlcMN3Ac4jbIU3LMzYtKEAs2ypyqaa-4frqj0fxr-ltJS/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+<div id="rosary-container"> 
+  <!-- <img src="img/rosary.jpg" alt="" onclick="playAudio()"> -->
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQtrAjBnppvfkxF9hKTWwYzORp6MJzL6n7GXfgFmetNOUpi_My9qzR5b0RGJAIEa2RXkqs17O0HEADD/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
-	<div id="audio">
+<!-- <div id="audio"	 		
 <audio controls id="full-rosary">
-  <source src="audio/full-rosary.mp3" type="audio/mpeg">
+  <source src="https://drive.google.com/file/d/1OpNxctrY3XTjKiR3GqZ2oHa32mahO3n-/preview?usp=sharing" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 		</div>
@@ -43,12 +43,18 @@ Your browser does not support the audio element.
         var audio = document.getElementById("full-rosary");
         audio.play();
       }
-    </script>
-	<!--- FOOTER -->
-<footer>
-	<br><br><hr><br>
-	An Interdiscplinary Project between Religion, Art and Learning Innovation at Chapel School in São Paulo Brazil<br>
-	Directed by Ana Lucia Dias<br>Recited and performed by 4th Grade <br>Website designed by Otavio Garcia made and Developed by Christopher Govier<br></footer>
+    </script> --> 
+<!--- FOOTER -->
+<footer> <br>
+  <br>
+  <hr>
+  <br>
+  An Interdiscplinary Project between Religion, Art and Learning Innovation at Chapel School in São Paulo Brazil<br>
+  Directed by Ana Lucia Dias<br>
+  Recited and performed by 4th Grade <br>
+  Art by Cristina El Dib<br>
+  Website designed by Otavio Garcia made and developed by Christopher Govier<br>
+</footer>
 <script>
       const navbar = document.querySelector('.navbar');
       const toggleBtn = document.querySelector('.toggle-btn');
@@ -61,7 +67,7 @@ Your browser does not support the audio element.
       closeBtn.addEventListener('click', () => {
         navbar.classList.remove('show');
       });
-</script>
-	<!--- END FOOTER -->
+</script> 
+<!--- END FOOTER -->
 </body>
 </html>
